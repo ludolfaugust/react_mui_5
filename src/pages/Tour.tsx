@@ -21,7 +21,7 @@ function Tour() {
           <Typography variant='h6' component="h4" marginTop={3}>
               About this Ticket
           </Typography>
-          <Typography variant='paragraph' component="p" marginTop={3}>
+          <Typography variant='body1' component="p" marginTop={3}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas perspiciatis hic, repellendus, fugiat itaque aut ea qui optio repudiandae, quos aspernatur? Repellendus temporibus dolorum doloremque praesentium placeat facilis dicta a nulla reiciendis quod, corporis, eius in modi hic quia maxime!
           </Typography>
         </Box>

@@ -3,11 +3,11 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import cities from "../data.json";
 import Typography from '@mui/material/Typography';
+import React from 'react';
 
 function Home() {
   return (
     <div>
-
       <Container sx={{marginY:5}}>
         {cities.map((city) =>(
           <><Typography

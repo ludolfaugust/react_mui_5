@@ -7,6 +7,11 @@ import {AccessTime} from '@mui/icons-material';
 import Rating from '@mui/material/Rating';
 import { ThemeProvider, createTheme } from '@mui/material';
 
+
+interface Props {
+    tour: {image: string, name: string, duration: number, rating: number, numberOfReviews: number, price: number }
+}
+
 const theme = createTheme({
     components: {
         MuiTypography: {
@@ -21,7 +26,7 @@ const theme = createTheme({
                 },
                 {
                     props: {
-                        variant: "body3",
+                        variant: "body2",
                     },
                     style: {
                         fontSize: 9,
@@ -32,7 +37,7 @@ const theme = createTheme({
     },
 });
 
-function TourCard({tour}) {
+export const TourCard: React.FC<Props> = ({tour}) =>{
   return (
     <Grid item xs={3}>
         <ThemeProvider theme={theme} >    
@@ -67,7 +72,7 @@ function TourCard({tour}) {
                 <Typography variant="body2" component="p" marginLeft={0.5}>
                     {tour.rating}
                 </Typography>
-                <Typography variant="body3" component="p" marginLeft={0.5}>
+                <Typography variant="body2" component="p" marginLeft={0.5}>
                     ({tour.numberOfReviews}Reviews)
                 </Typography>
                 </Box> 
